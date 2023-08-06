@@ -7,7 +7,5 @@ for i in range(2,number//2):
         flag=True
         break
 
-if not(flag):
-    print(f"{number} is Prime Number")
-else:
-    print(f"{number} is not a Prime Number")
+if not(flag): print(f"{number} is Prime Number")
+else: print(f"{number} is not a Prime Number")
