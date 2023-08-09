@@ -15,7 +15,7 @@ lives=6
 game_over=False
 
 while not game_over:
-    gussed_latter=input("Guss a latter: ")
+    gussed_latter=input("Guss a latter: ").lower()
     for i in range(len(chosen_word)):
         if gussed_latter==chosen_word[i]:
             word_element_list[i]=gussed_latter
