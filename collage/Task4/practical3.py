@@ -1,3 +1,9 @@
+'''
+Practical 3
+Write a menu driven program for creating calculator with arithmetic
+operations. Create functions for +,-,* and / and call those functions in switch
+case.
+'''
 
 # functions start
 def sum(num1,num2):
