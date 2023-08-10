@@ -14,5 +14,3 @@ def sum_average(numbers):
 myList=[100,90,10,56,50,89,67,45,100,780,]
 sum,average=sum_average(myList)
 print(f"sum is {sum} and average is {average}")
-
-

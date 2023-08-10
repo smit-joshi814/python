@@ -5,8 +5,8 @@ Define a second function called by_three that takes an argument called
 number. if that number is divisible by 3, by_three should call cube(number)
 and return its result. Otherwise, by_three should return False.
 '''
-# functions start
 
+# functions start
 def cube(number): 
     return number*number*number
 
@@ -15,7 +15,6 @@ def by_three (number):
         return cube (number) 
     else:
         return False
-
 # functions end
 
 number=int(input("Enter Number: ")) 
