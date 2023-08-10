@@ -1,5 +1,5 @@
 '''
-Practical 1
+Practical 1 
 Write a python function for calculating cube of the number.
 Define a second function called by_three that takes an argument called
 number. if that number is divisible by 3, by_three should call cube(number)
