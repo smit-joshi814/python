@@ -67,8 +67,3 @@ printPattern_2(limit=limit)
 print()
 print("<------Patteren iii ------>")
 printPattern_3(limit=limit)
-
-
-
-
-
