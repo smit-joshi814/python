@@ -49,10 +49,10 @@ dictionary={
 # print(dictionary)
 
 dictionary["student3"]["semester"]=2
+print()
 print(dictionary["student3"])
+print()
 del dictionary["student4"]
-print(dictionary)
-
 dict2=dictionary.copy()
 print(dict2)
 

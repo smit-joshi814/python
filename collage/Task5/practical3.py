@@ -33,9 +33,9 @@ def display():
 
 while True:
 	print()
-	print("Enter 1 For push()")
-	print("Enter 2 For pop()")
-	print("Enter 3 To Display()")
+	print("Enter 1 For push()",end="\t")
+	print("Enter 2 For pop()",end="\t")
+	print("Enter 3 To Display()",end="\t")
 	print("Enter 4 To Exit()")
 	choice=input("Enter Choice: ")
 	if choice=="1":

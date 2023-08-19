@@ -2,6 +2,7 @@
 Write a menu driven program to implement the queue with operations insertion , deletion
 and display.
 '''
+
 queue=[]
 LIMIT=10
 FIRST=-1
@@ -44,9 +45,9 @@ def display():
 
 while True:
 	print()
-	print("Enter 1 to Insert()")
-	print("Enter 2 to Delete()")
-	print("Enter 3 to Display()")
+	print("Enter 1 to Insert()",end="\t")
+	print("Enter 2 to Delete()",end="\t")
+	print("Enter 3 to Display()",end="\t")
 	print("Enter 4 to Exit()")
 	choice=input("Enter choice: ")
 	if choice=="1":

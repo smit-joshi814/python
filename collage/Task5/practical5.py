@@ -6,20 +6,18 @@ HRA. DA is 10% of basic salary and HRA is 15% of basic salary. If basic salary i
 take default argument of basic salary as Rs. 9000
 '''
 
-def cacTotalSalary(basic=9000):
+def cacTotalSalary(employeeName,department,basic=9000):
 	da=basic*0.10
 	hra=basic*0.15
 	totalSalary=basic+da+hra
-	return totalSalary
+	print(f"Name: {name} \nDepartment: {department}\n Total Salary: {totalSalary}")
 
-totalSalary=0
 name=input("Enter Name ")
 department=input("Enter Department ")
-choice=input("Want to skip Basic [Y / N] ")
-if choice=="N":
-	basic=int(input("Enter Basic "))
-	totalSalary=cacTotalSalary(basic)
-else: 
-	totalSalary=cacTotalSalary()
+basic=int(input("Enter Basic "))
 
-print(f"Name: {name} \nDepartment: {department}\n Total Salary: {totalSalary}")
+cacTotalSalary(name,department,basic)
+print()
+name=input("Enter Name ")
+department=input("Enter Department ")
+cacTotalSalary(name,department)
