@@ -32,6 +32,6 @@ def margeSort(arr,start,end):
         marge(arr,start,mid,end)
 
 
-list=[780,680,100,90,70,50,40,30,20,10]
+list=[780,680,100,90,70,50,40]
 print(list,"\n")
 margeSort(list,0,len(list)-1)
