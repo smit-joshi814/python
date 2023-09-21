@@ -1,3 +1,8 @@
+'''
+3. Create class point with members x and y. Create method for finding the euclidian distance
+between two points.
+'''
+
 import math
 
 class PointOperations(object):

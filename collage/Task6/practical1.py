@@ -1,3 +1,10 @@
+'''
+1. Write a python program for creating class Fraction with members numerator and
+denominator to represent rational numbers like 1/2 and -3/8. Create a constructor to
+initialize the objects and write the method for addition and multiplication of two fractions
+and display the result in proper fraction format
+'''
+
 class Fraction(object):
 	"""docstring for Fraction"""
 	numerator=1

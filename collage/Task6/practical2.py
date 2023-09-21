@@ -1,3 +1,8 @@
+'''
+2. Write a python program to create a class Room with members length and breadth. Initialize
+the attributes and find the area of the room and display the result.
+'''
+
 class Area(object):
 	"""docstring for Area"""
 	def __init__(self, length,bredth):
