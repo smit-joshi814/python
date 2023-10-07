@@ -2,7 +2,6 @@
 6. Create class complex with members real and imaginary and create a method for addition
 and multiplication of two complex numbers.
 '''
-import math
 
 class Complex():
     def __init__(self,real=0.0,imaginary=0.0):

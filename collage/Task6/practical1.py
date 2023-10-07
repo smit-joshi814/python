@@ -37,9 +37,9 @@ def main():
 	obj2=Fraction(3,8)
 
 	num,deno=obj2.add(obj1)
-	print(f"Addition of 1/2 + 3/8 : {num}/{deno}")
+	print(f"Addition => {num}/{deno}")
 
 	num,deno=obj2.multiply(obj1)
-	print(f"multiplication 1/2 * 3/8 : {num}/{deno}")	
+	print(f"multiplication => {num}/{deno}")	
 
 main()
