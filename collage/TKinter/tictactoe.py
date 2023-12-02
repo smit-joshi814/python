@@ -1,4 +1,3 @@
-
 from tkinter import *
 import tkinter.messagebox as tkMessageBox
 
@@ -16,15 +15,12 @@ titleLabel1.grid(row=0,column=0 )
 optionalFrame= Frame(root,bg="grey")
 optionalFrame.pack()
 
-
-
 frame2=Frame(root,bg="lightblue")
 frame2.pack()
 
 board = { 1:" ",2:" ",3:" ",
           4:" ",5:" ",6:" ",
           7:" ",8:" ",9:" " }
-
 
 turn = "X"
 game_end=False
@@ -89,7 +85,7 @@ def restartgame():
     for i in board.keys():
         board[i]=" "
 
-    titleLabel1=Label(fram1,text="Tic Tac Toe" , font=("Arial",26), bg="blue", width=15)
+    titleLabel1=Label(fram1,text="Tic Tac Toe" , font=("Arial",26), bg="blue", width=16)
     titleLabel1.grid(row=0,column=0)
 
 def minimax(board,ismaximize):
@@ -122,7 +118,6 @@ def minimax(board,ismaximize):
                 board[keys]=" "
                 if score < bestScore:
                     bestScore = score
-
         return bestScore 
 
 def playComputer():
@@ -137,16 +132,13 @@ def playComputer():
             if score > bestScore:
                 bestScore = score
                 bestMove= keys
-
     board[bestMove]= "O"
 
 def play(event):
     global turn,game_end
     if game_end :
-        return
-   
+        return   
     button=event.widget
-
     buttontext =str(button)
     clicked= buttontext[-1]
     # print(clicked)
@@ -163,16 +155,16 @@ def play(event):
             if checkforwin(turn):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ",bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
+                # tkMessageBox.showinfo(message=f"{turn} wins the game ")
                 game_end=True
             turn = "O"
             updateBoard() 
             if mode=="singlePlayer":
                 playComputer()
                 if checkforwin(turn):
-                    winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",26),width=16)
+                    winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",20), width=20)
                     winningLabel.grid(row=0,column=0,columnspan=3)
-                    tkMessageBox.showinfo(message="Computer wins the game")
+                    # tkMessageBox.showinfo(message="Computer wins the game")
                     game_end=True
 
                 turn="X"
@@ -183,14 +175,14 @@ def play(event):
             if checkforwin(turn):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ", bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
+                # tkMessageBox.showinfo(message=f"{turn} wins the game ")
                 game_end=True
             turn = "X"
         
         if checkfordraw():
             drawLabel=Label(fram1,text="Game draw", bg="blue",font=("Arial",26),width=16)
             drawLabel.grid(row=0,column=0,columnspan=3)
-            tkMessageBox.showinfo(message="Game draw")
+            # tkMessageBox.showinfo(message="Game draw")
 
 # UI Design 
 # change mode options
