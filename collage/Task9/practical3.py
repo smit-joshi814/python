@@ -1,3 +1,5 @@
+# calculates the sum of the squares of odd natural numbers up to a user-defined value N
+
 N=int(input("Enter N: "))
 
 try:

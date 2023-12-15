@@ -17,8 +17,8 @@ class CustomDate():
             print("Invalid Date")
 
     def isLeapYear(self):
-        if self.year%4==0:
-            if self.year % 100 != 0 or self.year %400 ==0:
+        if self.year % 4 == 0:
+            if self.year % 100 != 0 or self.year % 400 == 0:
                 return True
         else: return False
 

@@ -11,7 +11,7 @@ def isArmstrong(number):
         temp//=10
     if sum==number:
         return True
-    else:
+    if temp == 0:
         print(sum)
         return False
     
