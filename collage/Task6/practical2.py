@@ -15,6 +15,6 @@ class Area(object):
 		
 def main():
 	obj1=Area(4,3)
-	print(f"Area of Room Is : {obj1.area()}");
+	print(f"Area of Room Is : {obj1.area()}")
 
 main()

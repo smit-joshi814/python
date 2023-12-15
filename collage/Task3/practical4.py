@@ -6,9 +6,9 @@ odd=0
 even=0
 for i in range(1,N+1):
     if i%2==0:
-      odd+=1
+      even+=1
     else:
-       even+=1
+      odd+=1
 
 print(f"Odd Count:{odd}")
 print(f"Even Count {even}")
